@@ -1,1 +1,294 @@
-Coming soon.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Souleimen Bouhafs</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&family=Poppins:wght@200;300;400&display=swap");
+
+    :root {
+      --primary-color: #343a40;
+      --secondary-color: #6c757d;
+      --font-color: #495057;
+      --bg-color: #f8f9fa;
+      --heading-color: #212529;
+    }
+
+    [data-theme="dark"] {
+      --primary-color: #f8f9fa;
+      --secondary-color: #6c757d;
+      --font-color: #e9ecef;
+      --bg-color: #212529;
+      --heading-color: #ced4da;
+    }
+
+    .contain {
+      width: 960px;
+      margin: auto;
+      margin-top: 3em;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Rubik", sans-serif;
+      color: var(--heading-color);
+      margin-bottom: 0.6em;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      margin-top: 0em;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 2em;
+    }
+
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-size: 1.5em;
+      color: var(--font-color);
+      text-align: justify;
+      line-height: 1.6em;
+    }
+
+    .align {
+      margin: 0em 0em;
+      text-align: right;
+    }
+
+    .bold {
+      font-weight: 400;
+      color: var(--primary-color);
+    }
+
+
+    a {
+      text-decoration: none;
+      color: var(--heading-color);
+    }
+
+    a:hover {
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    .things,
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .header {
+      margin-bottom: 3em;
+    }
+
+    .doing .wrap {
+      margin-top: 1em;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .doing .col {
+      flex: 25%;
+      max-width: 100%;
+    }
+
+    .doing .col img {
+      vertical-align: top;
+      width: 49%;
+      margin: 5px 2px 5px;
+    }
+
+    .theme-switch input {
+      display: none;
+    }
+
+    input:checked+span {
+      filter: hue-rotate(0deg);
+    }
+
+    @keyframes wave-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      10% {
+        transform: rotate(14deg);
+      }
+
+      20% {
+        transform: rotate(-8deg);
+      }
+
+      30% {
+        transform: rotate(14deg);
+      }
+
+      40% {
+        transform: rotate(-4deg);
+      }
+
+      50% {
+        transform: rotate(10deg);
+      }
+
+      60% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    .wave {
+      animation-name: wave-animation;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+      font-size: 0.9em;
+      vertical-align: top;
+    }
+
+    @media screen and (max-width: 800px) {
+      .col {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .col {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .bubble {
+      font-family: monospace;
+      font-size: 8px;
+      font-weight: 200;
+      position: relative;
+      bottom: 55px;
+      right: 30px;
+      padding: 3px;
+      border: 1px solid var(--secondary-color);
+      border-radius: 5px;
+    }
+
+    .bubble-left:before {
+      content: "";
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      border-left: 2px solid var(--secondary-color);
+      border-right: 2px solid transparent;
+      border-top: 2px solid var(--secondary-color);
+      border-bottom: 2px solid transparent;
+      left: 10px;
+      top: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contain">
+    <div class="header">
+      <h1>
+        HELLO!
+        <span class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <span class="wave">👋🏻</span>
+          </label>
+          <span class="bubble bubble-left">click to switch the light</span>
+        </span>
+      </h1>
+      <p class="align">
+        Say hi at: <span class="bold">hi at adhi.eu.org</span>
+        <br />
+        <a class="bold" href="https://github.com/SlyBouhafs">Github</a> ·
+        <a class="bold" href="https://twitter.com/SlyBouhafs">Twitter</a> ·
+        <a class="bold" href="https://www.facebook.com/sly.bouhafs">Facebook</a>
+      </p>
+    </div>
+    <div class="intro">
+      <p>
+        My name is <span class="bold">Souleiman Bouhafs</span>, people call me
+        <span class="bold">Sly</span>, I am a FullStack Software Engineer,
+        Sound Engineer and a Musician based in
+        <span class="bold">Algeria</span>, I do Web stuff and make Music.
+      </p>
+    </div>
+    <div class="things">
+      <p>
+        I know HTML, CSS, JS, Git, Python, Bash, Sql, Linux, Node, Graphql, React and i use (N)Vim for coding, Figma for
+        design and Ableton for music.
+      </p>
+      <p>
+        I am learning Vue, Elm, Svelte, Clojure and Lua.
+      </p>
+    </div>
+
+    <div class="doing">
+      <p>
+        I made these:
+      </p>
+      <p><span class="bold">More to come later…</span></p>
+      <div class="wrap">
+        <!-- <div class="col"> -->
+        <!--   <img src="4.png" alt="" /> -->
+        <!--   <img src="1.png" alt="" /> -->
+        <!--   <img src="3.png" alt="" /> -->
+        <!--   <img src="2.png" alt="" /> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <script>
+    const toggleSwitch = document.querySelector(
+      '.theme-switch input[type="checkbox"]'
+    );
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+      }
+    }
+
+    const currentTheme = localStorage.getItem("theme")
+      ? localStorage.getItem("theme")
+      : null;
+
+    if (currentTheme) {
+      document.documentElement.setAttribute("data-theme", currentTheme);
+
+      if (currentTheme === "dark") {
+        toggleSwitch.checked = true;
+      }
+    }
+
+    toggleSwitch.addEventListener("change", switchTheme, false);
+  </script>
+</body>
+
+</html>
